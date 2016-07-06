@@ -14,6 +14,22 @@
         /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
         @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
         @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        
+        body {
+            background-color: antiquewhite;
+        }
+        .center {
+            text-align: center;
+        }
+        #main {
+            color: navy;
+        }
+        p{
+            color:gray;
+        }
+        p span.italic{
+            font-style: italic;
+        }
     </style>
 
     <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
@@ -29,7 +45,7 @@
     
     <h1 class="center">Titulo 2</h1>
     <h2>Subtitulo 2</h2>
-    <p>Texto 2 Italic</p>
+    <p>Texto 2 <span class="italic">Italic</span></p>
     <p>Texto 3</p>
 
 </body>
