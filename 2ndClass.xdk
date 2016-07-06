@@ -5,13 +5,21 @@
       "projectTypeName": "com.intel.xdk.projecttype.webapp",
       "src": "webapp/template-blank/sample.zip",
       "projectGuid": "a365716e-c997-46f0-b3a1-a3b34f78cb4c",
-      "lastModifiedDate": 1467848109429,
+      "lastModifiedDate": 1467848408466,
       "creationDate": 1467848109081
     },
     "XDK-app-designer": "false",
     "sourceDirectory": "www",
     "startFile": "index.html",
-    "projectFiles": {},
+    "projectFiles": {
+      "xdk-publish-meta-data.json": {
+        "settings": {
+          "project": {
+            "XDK-not-deployed": "True"
+          }
+        }
+      }
+    },
     "projectDirectories": {},
     "libraries": [],
     "serviceMethods": [],
@@ -30,10 +38,11 @@
         "appName_": "2ndClass",
         "appID_": "xdk.intel.blank.template",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [],
           "intents": [],
-          "navigation": []
+          "navigation": [],
+          "properties": {}
         },
         "icons_": [],
         "splashes_": [],
@@ -59,10 +68,11 @@
         "appName_": "2ndClass",
         "appID_": "xdk.intel.blank.template",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [],
           "intents": [],
-          "navigation": []
+          "navigation": [],
+          "properties": {}
         },
         "icons_": [],
         "splashes_": [],
