@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery-3.0.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#load").click(function(){
+                    $("#div1").load("demo_test.txt");
+                });
+
+                // comunicación a un web service con GET
+                $("#get").click(function(){
+                    $.get("http://www.w3schools.com/jquery/demo_test.asp", function(data, status){
+                        alert("Data: " + data + "\nStatus: " + status);
+                    });
+                });
+
+                // comunicación a un web service con POST
+                $("#post").click(function(){
+                    $.post("http://www.w3schools.com/jquery/demo_test_post.asp",
+                           {
+                        name: "Innovaciones Tecnologicas",
+                        city: "Asuncion"
+                    },
+                           function(data, status){
+                        alert("Data: " + data + "\nStatus: " + status);
+                    });
+                });
+
+            });
+
+
+        </script>
+    </head>
+    <body>
+
+        <div id="div1"><h2>Vamos a dejar que jQuery AJAX cambie el texto</h2></div>
+
+        <button id="load">Obtener Contenido</button><br>
+        <button id="get">Llamada GET</button> <br>
+        <button id="post">Llamada POST</button>
+
+    </body>
+</html>
+
